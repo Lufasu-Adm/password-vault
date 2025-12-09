@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# 🔐 Password Vault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, secure, and responsive **Password Manager** application built with **React**, **Vite**, and **Tailwind CSS**. This application allows users to store, manage, and generate secure passwords locally using the browser's LocalStorage.
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Tech Stack](https://img.shields.io/badge/Stack-React_TS_Tailwind-blue)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+* **🔒 Secure Storage:** Data is stored persistently in the browser's LocalStorage.
+* **👁️ Show/Hide Password:** Toggle password visibility for security.
+* **🎲 Password Generator:** Built-in tool to generate strong, random passwords (12 characters).
+* **📋 Copy to Clipboard:** One-click copy functionality for ease of use.
+* **🔍 Search & Filter:** Real-time search to find accounts quickly.
+* **🗑️ Management:** Easy add and delete functionality.
+* **🌙 Dark Mode UI:** Designed with a modern, eye-comfortable dark theme using Tailwind CSS.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Framework:** [React](https://react.dev/) (via [Vite](https://vitejs.dev/))
+* **Language:** TypeScript / JavaScript
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** Native UTF-8 Emojis & CSS Shapes
+* **State Management:** React Hooks (`useState`, `useEffect`)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 How to Run Locally
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Follow these steps to run the project on your local machine:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/USERNAME_GITHUB_KAMU/password-vault.git](https://github.com/USERNAME_GITHUB_KAMU/password-vault.git)
+    cd password-vault
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Run the Development Server**
+    ```bash
+    npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4.  **Open in Browser**
+    Click the link shown in the terminal (usually `http://localhost:5173`).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📂 Project Structure
+
+```bash
+password-vault/
+├── src/
+│   ├── App.tsx       # Main application logic
+│   ├── index.css     # Tailwind directives
+│   └── main.tsx      # Entry point
+├── public/           # Static assets
+├── index.html        # HTML template
+├── tailwind.config.js
+└── package.json
