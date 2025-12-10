@@ -52,10 +52,9 @@ Follow these steps to run the project on your local machine:
 
 | Home Screen |
 |:---:|
-| <img src="[https://github.com/Lufasu-Adm/AI-Stickers-Companion/blob/main/assets/home.png](https://github.com/Lufasu-Adm/password-vault/blob/main/src/assets/tampilan.png)" width="200" alt="Home"> | 
+| <img src="https://github.com/Lufasu-Adm/password-vault/blob/main/src/assets/tampilan.png" width="200" alt="Home"> | 
 
 ```
-
 ## 📂 Project Structure
 
 ```bash
