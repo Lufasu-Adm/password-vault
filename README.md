@@ -46,6 +46,16 @@ Follow these steps to run the project on your local machine:
 4.  **Open in Browser**
     Click the link shown in the terminal (usually `http://localhost:5173`).
 
+---
+
+## 🖼️ Screenshot Aplikasi
+
+| Home Screen |
+|:---:|
+| <img src="[https://github.com/Lufasu-Adm/AI-Stickers-Companion/blob/main/assets/home.png](https://github.com/Lufasu-Adm/password-vault/blob/main/src/assets/tampilan.png)" width="200" alt="Home"> | 
+
+```
+
 ## 📂 Project Structure
 
 ```bash
